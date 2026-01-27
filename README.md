@@ -13,6 +13,10 @@ Key topics studied and applied include:
 - **Inverse Kinematics (IK):** Computing joint angles required to place the foot at a desired position in Cartesian space.
 - **Coordinate Frames & Transformations:** Defining link frames, joint frames, and transforming between coordinate spaces.
 
+<p align="center">
+  <img src="Media/image.png" width="500"/>
+</p>
+
 In parallel, we studied **control systems and their mathematical tools**, including:
 - System modeling and response analysis
 - **Laplace transforms** for understanding system behavior
@@ -32,6 +36,10 @@ This phase involved:
 - Testing timing sequences for a **crawl gait**, ensuring static stability
 - Observing joint angle continuity and avoiding singular configurations
 
+<p align="center">
+  <img src="Media/crawlgait_sim_matlab.gif" width="500"/>
+</p>
+
 MATLAB simulations allowed rapid experimentation with gait parameters and helped validate the feasibility of the chosen leg geometry and motion strategy before moving to hardware.
 
 ---
@@ -44,6 +52,11 @@ Key design decisions included:
 - Using **linear actuation for the lower leg link** to:
   - Reduce torque requirements on the shoulder servos
   - Improve mechanical efficiency and load distribution
+ 
+<p align="center">
+  <img src="Media/cad_model.gif" width="500"/>
+</p>
+  
 - Designing a **compact and enclosed body** to house all essential components:
   - Battery
   - Arduino Uno
@@ -64,6 +77,10 @@ Hardware components used include:
 - PCA9685 for multi-servo control
 - Battery and power regulation components
 
+<p align="center">
+  <img src="Media/single_leg_implementation.gif" width="500"/>
+</p>
+
 Care was taken to ensure:
 - Proper servo alignment
 - Smooth joint motion
@@ -79,6 +96,10 @@ This involved:
 - Synchronizing leg motion for a crawl gait
 - Incremental testing and tuning to achieve stable motion
 
+<p align="center">
+  <img src="Media/crawlgait_implementation.gif" width="500"/>
+</p>
+
 After full assembly and software integration, the quadruped was able to:
 - **Stand stably**
 - **Execute a crawl gait**
@@ -91,7 +112,7 @@ This project provided end-to-end exposure to **legged robotics**, combining math
 
 ---
 
-## Future Work
+## Future Scope
 - Closed-loop control using sensors
 - More dynamic gaits (trot, pace)
 - ROS integration and simulation in Gazebo
